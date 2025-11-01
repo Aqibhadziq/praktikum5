@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box2</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        width: 85%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .row {
+        display: flex;
+        gap: 15px;
+      }
+
+      .box {
+        border: 3px solid black;
+      }
+
+      .yellow {
+        background-color: yellow;
+        width: 120px;
+        height: 60px;
+      }
+
+      .orange {
+        background-color: orangered;
+        flex: 1;
+        height: 60px;
+      }
+
+      .green {
+        background-color: lightgreen;
+        width: 120px;
+        height: 300px;
+      }
+
+      .center {
+        background-color: lightgray;
+        flex: 1;
+        height: 300px;
+      }
+
+      .blue {
+        background-color: skyblue;
+        width: 150px;
+        height: 300px;
+      }
+
+      .footer {
+        background-color: blue;
+        border: 3px solid black;
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="box yellow"></div>
+        <div class="box orange"></div>
+      </div>
+      <div class="row">
+        <div class="box green"></div>
+        <div class="box center"></div>
+        <div class="box blue"></div>
+      </div>
+      <div class="box footer"></div>
+    </div>
+  </body>
+</html>

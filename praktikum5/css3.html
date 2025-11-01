@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box1</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        padding: 24px;
+      }
+
+      .container {
+        width: 900px;
+        height: 520px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .box {
+        border: 3px solid black;
+        border-radius: 4px;
+      }
+
+      .header {
+        background: lightgreen;
+        height: 100px;
+      }
+
+      .content {
+        display: flex;
+        flex: 1;
+        gap: 16px;
+        height: 100%;
+      }
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 160px;
+        gap: 16px;
+      }
+
+      .yellow {
+        background: yellow;
+        flex: 1;
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 16px;
+      }
+
+      .orange {
+        background: orangered;
+        flex: 1;
+      }
+
+      .blue {
+        background: skyblue;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+     <div class="box header"></div>
+     <div class="content">
+        <div class="left">
+           <div class="box yellow"></div>
+           <div class="box yellow"></div>
+        </div>
+        <div class="right">
+          <div class="box orange"></div>
+          <div class="box blue"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
